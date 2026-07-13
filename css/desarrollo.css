@@ -1,0 +1,250 @@
+/* ============================================
+   DESARROLLADOR - ESTILOS
+   ============================================ */
+
+#desarrollador {
+    background-color: #4e1f2e;
+    padding: 60px 0;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.dev-card {
+    background-color: bisque;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.dev-card:hover {
+    transform: translateY(-5px);
+}
+
+.dev-imagen {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.dev-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.dev-card:hover .dev-imagen img {
+    transform: scale(1.05);
+}
+
+.dev-info {
+    padding: 30px 35px;
+}
+
+.dev-nombre {
+    font-size: 32px;
+    color: #4e1f2e;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.dev-rol {
+    font-size: 18px;
+    color: #CB7790;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.dev-descripcion p {
+    font-size: 16px;
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.dev-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tag {
+    background-color: #CB7790;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.tech-tag:hover {
+    background-color: #4e1f2e;
+    transform: scale(1.05);
+}
+
+.dev-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social-link {
+    color: #4e1f2e;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 18px;
+    border-radius: 12px;
+    background-color: #f0e0e8;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background-color: #CB7790;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.dev-contacto {
+    text-align: center;
+}
+
+.btn-contacto {
+    display: inline-block;
+    background: linear-gradient(135deg, #CB7790, #4e1f2e);
+    color: white;
+    padding: 14px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(203, 119, 144, 0.3);
+}
+
+.btn-contacto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(203, 119, 144, 0.5);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+    .dev-imagen {
+        height: 280px;
+    }
+
+    .dev-info {
+        padding: 25px 20px;
+    }
+
+    .dev-nombre {
+        font-size: 26px;
+    }
+
+    .dev-rol {
+        font-size: 16px;
+    }
+
+    .dev-descripcion p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #desarrollador {
+        padding: 40px 0;
+    }
+
+    .dev-imagen {
+        height: 220px;
+    }
+
+    .dev-info {
+        padding: 20px 15px;
+    }
+
+    .dev-nombre {
+        font-size: 22px;
+    }
+
+    .dev-rol {
+        font-size: 14px;
+    }
+
+    .dev-descripcion p {
+        font-size: 14px;
+    }
+
+    .tech-tag {
+        font-size: 11px;
+        padding: 4px 12px;
+    }
+
+    .social-link {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btn-contacto {
+        font-size: 15px;
+        padding: 12px 30px;
+    }
+}
+
+/* ============================================
+   MODO CLARO
+   ============================================ */
+
+body.modo-claro #desarrollador {
+    background-color: #f5e6ea;
+}
+
+body.modo-claro .dev-card {
+    background-color: #fff5f0;
+}
+
+body.modo-claro .dev-nombre {
+    color: #3d1a2a;
+}
+
+body.modo-claro .dev-descripcion p {
+    color: #3d1a2a;
+}
+
+body.modo-claro .social-link {
+    background-color: #f5e6ea;
+    color: #3d1a2a;
+}
+
+body.modo-claro .social-link:hover {
+    background-color: #CB7790;
+    color: white;
+}
+
+body.modo-claro .btn-contacto {
+    background: linear-gradient(135deg, #d4a0b0, #f5e6ea);
+    color: #3d1a2a;
+}

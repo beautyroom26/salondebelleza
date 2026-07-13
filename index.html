@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    
+
+</head>
+<body>
+
+<header>
+    <img class="logon" src="img/logon.png" alt="">
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="formulario.html">Contacto</a>
+        <a href="preguntas.html">Preguntas Frecuentes</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="beneficios.html">Beneficios</a>
+        <a href="politica.html">Politica de Privacidad</a>
+        <a href="desarrollo.html">Devs</a>
+    </nav>
+</header>
+
+    <!--Banner-->
+<div class="banner">
+    <button class="btnpro" onclick="window.location.href='nosotros.html'">
+        Sobre Nosotros <img class="icono" src="img/flecha.png" alt="">
+    </button>
+</div>
+
+    <!--Presentación-->
+    <div class="presentacion">
+        <div class="caja-presentacion">
+        <h2>Presentación</h2>
+        <h4>Bienvenidos a nuestro Salón de Belleza, un espacio creado para realzar tu belleza y hacerte sentir bien en cada visita. Nos esforzamos por ofrecer una atención cálida, un ambiente agradable y una experiencia pensada para que disfrutes de un momento de cuidado y renovación. Gracias por confiar en nosotros; será un placer atenderte y ayudarte a lucir tu mejor versión.</h4>
+        </div>
+    </div>
+
+    <!--seccion-->
+    <section class="caja-categoria">
+         <div class="separador">
+        <h1 class="titulos">Categoria de servicios</h1>
+        </div>
+        <div id="categoria">
+            <!--apareceran las categorias-->
+        </div>
+    </section>
+
+
+    <div class="separador">
+        <h1 class="titulos">Galería de trabajos</h1>
+    </div>
+
+    <!--Galería-->
+    <section class="galería" id="galeria">
+
+    </section>
+
+   <!-- ===== TESTIMONIOS ===== -->
+<section id="testimonios-destacados">
+    <div class="container">
+        <div class="separador">
+        <h1 class="titulos">Testimonios</h1>
+    </div>
+        <div class="testimonios-grid" id="testimonios-grid">
+            <!-- Los testimonios se generan con JavaScript -->
+        </div>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="footer-contenido">
+        <div class="footer-columna">
+            <h3>The Beauty Room</h3>
+            <p>✨ Belleza y cuidados para ti</p>
+        </div>
+        
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <p>📞 0982115478</p>
+            <p>📍 San Lorenzo</p>
+        </div>
+        
+        <div class="footer-columna">
+            <h4>Horarios</h4>
+            <p>Lun-Vie: 08:00 - 19:00</p>
+            <p>Sab:08:00 - 16:00</p>
+            <p>Dom: Cerrado</p>
+        </div>
+    </div>
+    
+    <div class="footer-copy">
+        <p>© 2026 Salón de Belleza - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<!-- MODAL PARA IMÁGENES -->
+<div id="modal-imagen" class="modal">
+    <span class="modal-cerrar">&times;</span>
+    <img class="modal-contenido" id="modal-img">
+    <div id="modal-pie"></div>
+</div>
+
+    <!--Scripts-->
+    <script src="js/tema.js"></script>
+    <script src="js/categoria.js"></script>
+    <script src="js/servicios.js"></script>
+    <script src="js/testimonios.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/imagen-mod.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+/* ============================================
+   BENEFICIOS - ESTILOS
+   ============================================ */
+
+#beneficios {
+    background-color: #4e1f2e;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.beneficios-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.beneficios-titulo {
+    font-size: 42px;
+    color: bisque;
+    margin: 0 0 10px 0;
+}
+
+.beneficios-subtitulo {
+    font-size: 20px;
+    color: #CB7790;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* ===== GRID ===== */
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* ===== TARJETA ===== */
+.beneficio-card {
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+.beneficio-icono {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.beneficio-nombre {
+    font-size: 20px;
+    color: #4e1f2e;
+    margin: 0 0 10px 0;
+}
+
+.beneficio-descripcion {
+    font-size: 15px;
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .beneficios-titulo {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .beneficios-titulo {
+        font-size: 28px;
+    }
+    
+    .beneficios-subtitulo {
+        font-size: 16px;
+    }
+    
+    .beneficio-card {
+        padding: 25px 20px;
+    }
+    
+    .beneficio-icono {
+        font-size: 40px;
+    }
+    
+    .beneficio-nombre {
+        font-size: 17px;
+    }
+    
+    .beneficio-descripcion {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .beneficios-titulo {
+        font-size: 22px;
+    }
+    
+    .beneficios-subtitulo {
+        font-size: 14px;
+    }
+    
+    .beneficio-card {
+        padding: 20px 15px;
+    }
+    
+    .beneficio-icono {
+        font-size: 35px;
+    }
+    
+    .beneficio-nombre {
+        font-size: 16px;
+    }
+    
+    .beneficio-descripcion {
+        font-size: 13px;
+    }
+}
+
+/* ============================================
+   MODO CLARO
+   ============================================ */
+
+body.modo-claro #beneficios {
+    background-color: #f5e6ea;
+}
+
+body.modo-claro .beneficios-titulo {
+    color: #3d1a2a;
+}
+
+body.modo-claro .beneficios-subtitulo {
+    color: #3d1a2a;
+}
+
+body.modo-claro .beneficio-card {
+    background-color: #fff5f0;
+}
+
+body.modo-claro .beneficio-nombre {
+    color: #3d1a2a;
+}
+
+body.modo-claro .beneficio-descripcion {
+    color: #3d1a2a;
+}

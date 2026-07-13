@@ -1,0 +1,592 @@
+/* ============================================
+   POLÍTICA DE PRIVACIDAD - ESTILOS COMPLETOS
+   ============================================ */
+
+* {
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #4e1f2e;
+    padding-top: 100px;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+
+.logon {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #4e1f2e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+nav a {
+    color: rgb(7, 0, 10);
+    text-decoration: none;
+    font-size: 32px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: #CB7790;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   HERO - MODO OSCURO
+   ============================================ */
+
+.hero-politica {
+    background: linear-gradient(135deg, #4e1f2e, #CB7790);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-contenido h1 {
+    font-size: 52px;
+    margin: 0 0 15px 0;
+}
+
+.hero-contenido p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+/* ============================================
+   POLÍTICA DE PRIVACIDAD - MODO OSCURO
+   ============================================ */
+
+#politica-privacidad {
+    background-color: #4e1f2e;
+    padding: 60px 0;
+}
+
+.politica-contenido {
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.politica-seccion {
+    margin-bottom: 45px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #CB7790;
+}
+
+.politica-seccion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+}
+
+.politica-icono {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.politica-titulo {
+    font-size: 30px;
+    color: #4e1f2e;
+    margin: 0 0 20px 0;
+}
+
+.politica-texto p {
+    font-size: 16px;
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    margin: 0 0 15px 0;
+}
+
+.politica-texto h4 {
+    font-size: 18px;
+    color: #4e1f2e;
+    margin: 20px 0 10px 0;
+}
+
+.politica-texto ul {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+}
+
+.politica-texto ul li {
+    font-size: 15px;
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.politica-texto strong {
+    color: #4e1f2e;
+}
+
+/* ============================================
+   CONTACTO RÁPIDO - MODO OSCURO
+   ============================================ */
+
+.politica-contacto {
+    margin-top: 20px;
+}
+
+.politica-contacto-card {
+    background-color: #4e1f2e;
+    padding: 35px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.politica-contacto-card h3 {
+    font-size: 26px;
+    color: #CB7790;
+    margin: 0 0 10px 0;
+}
+
+.politica-contacto-card p {
+    font-size: 17px;
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.btn-contacto-politica {
+    background-color: #CB7790;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-contacto-politica:hover {
+    background-color: #b88090;
+    transform: scale(1.05);
+}
+
+/* ============================================
+   FOOTER POLÍTICA - MODO OSCURO
+   ============================================ */
+
+.politica-footer {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 2px solid #CB7790;
+}
+
+.politica-footer p {
+    font-size: 15px;
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 0;
+}
+
+.politica-footer strong {
+    color: #4e1f2e;
+}
+
+/* ============================================
+   MODO CLARO
+   ============================================ */
+
+body.modo-claro #politica-privacidad {
+    background-color: #f5e6ea;
+}
+
+body.modo-claro .politica-contenido {
+    background-color: #fff5f0;
+}
+
+body.modo-claro .politica-titulo {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-texto p {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-texto h4 {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-texto ul li {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-texto strong {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-seccion {
+    border-bottom: 2px solid #d4a0b0;
+}
+
+body.modo-claro .politica-footer {
+    border-top: 2px solid #d4a0b0;
+}
+
+body.modo-claro .politica-footer p {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-footer strong {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-contacto-card {
+    background-color: #f5e6ea;
+}
+
+body.modo-claro .politica-contacto-card h3 {
+    color: #3d1a2a;
+}
+
+body.modo-claro .politica-contacto-card p {
+    color: #3d1a2a;
+}
+
+body.modo-claro .hero-politica {
+    background: linear-gradient(135deg, #f5e6ea, #d4a0b0);
+}
+
+body.modo-claro .hero-politica h1,
+body.modo-claro .hero-politica p {
+    color: #3d1a2a;
+}
+
+body.modo-claro .btn-contacto-politica {
+    background-color: #d4a0b0;
+    color: #4e1f2e;
+}
+
+body.modo-claro .btn-contacto-politica:hover {
+    background-color: #b88090;
+    color: white;
+}
+
+body.modo-claro header {
+    background-color: #f5e6ea !important;
+}
+
+body.modo-claro header nav a {
+    color: #2c121b !important;
+}
+
+body.modo-claro #footer {
+    background-color: #e8d5db !important;
+}
+
+body.modo-claro .footer-columna p {
+    color: #4e1f2e !important;
+}
+
+body.modo-claro .footer-copy p {
+    color: #7a5a6a !important;
+}
+
+/* ============================================
+   FOOTER GENERAL
+   ============================================ */
+
+#footer {
+    background-color: #2c121b;
+    padding: 30px 20px 15px;
+    color: bisque;
+}
+
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-columna h3 {
+    color: #CB7790;
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.footer-columna h4 {
+    color: #CB7790;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.footer-columna p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-copy {
+    text-align: center;
+    border-top: 1px solid #CB7790;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.footer-copy p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b8957a;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 1024px) {
+    body {
+        padding-top: 140px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        min-height: 120px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+
+    .politica-contenido {
+        padding: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+
+    header {
+        padding: 8px 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        min-height: 70px;
+    }
+
+    .logon {
+        width: 80px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 32px;
+    }
+
+    .hero-contenido p {
+        font-size: 16px;
+    }
+
+    .politica-contenido {
+        padding: 25px 20px;
+    }
+
+    .politica-titulo {
+        font-size: 24px;
+    }
+
+    .politica-texto p {
+        font-size: 15px;
+    }
+
+    .politica-texto ul li {
+        font-size: 14px;
+    }
+
+    .politica-contacto-card {
+        padding: 25px 20px;
+    }
+
+    .politica-contacto-card h3 {
+        font-size: 22px;
+    }
+
+    .politica-contacto-card p {
+        font-size: 15px;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 100px;
+    }
+
+    header {
+        padding: 6px 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
+        min-height: 60px;
+    }
+
+    .logon {
+        width: 60px;
+    }
+
+    nav {
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 24px;
+    }
+
+    .hero-contenido p {
+        font-size: 14px;
+    }
+
+    .politica-contenido {
+        padding: 18px 15px;
+        border-radius: 15px;
+    }
+
+    .politica-titulo {
+        font-size: 20px;
+    }
+
+    .politica-texto p {
+        font-size: 14px;
+    }
+
+    .politica-texto h4 {
+        font-size: 16px;
+    }
+
+    .politica-texto ul li {
+        font-size: 13px;
+    }
+
+    .politica-icono {
+        font-size: 32px;
+    }
+
+    .politica-contacto-card {
+        padding: 20px 15px;
+    }
+
+    .politica-contacto-card h3 {
+        font-size: 18px;
+    }
+
+    .politica-contacto-card p {
+        font-size: 14px;
+    }
+
+    .btn-contacto-politica {
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+
+    .politica-footer p {
+        font-size: 13px;
+    }
+
+    #footer {
+        padding: 20px 10px 10px;
+    }
+
+    .footer-contenido {
+        gap: 15px;
+    }
+
+    .footer-columna h3 {
+        font-size: 18px;
+    }
+
+    .footer-columna h4 {
+        font-size: 14px;
+    }
+
+    .footer-columna p {
+        font-size: 12px;
+    }
+
+    .footer-copy p {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,703 @@
+/* ============================================
+   SOBRE NOSOTROS - ESTILOS
+   ============================================ */
+
+* {
+    font-family: serif;
+}
+
+body {
+    margin: 0;
+    background-color: #4e1f2e;
+    padding-top: 100px;
+}
+
+/* ===== HEADER ===== */
+.logon {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #4e1f2e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    font-size: 25px;
+}
+
+nav a {
+    color: rgb(7, 0, 10);
+    text-decoration: none;
+    font-size: 32px;
+    padding: 5px;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: #CB7790;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== SECCIÓN HERO ===== */
+.hero-sobre {
+    background: linear-gradient(135deg, #4e1f2e, #CB7790);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-contenido h1 {
+    font-size: 52px;
+    margin: 0 0 15px 0;
+}
+
+.hero-contenido p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+/* ===== TÍTULOS DE SECCIÓN ===== */
+.seccion-titulo {
+    text-align: center;
+    font-size: 38px;
+    color: bisque;
+    margin: 0 0 10px 0;
+}
+
+.seccion-subtitulo {
+    text-align: center;
+    font-size: 18px;
+    color: #CB7790;
+    margin: 0 0 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   HISTORIA
+   ============================================ */
+.seccion-historia {
+    background-color: #4e1f2e;
+    padding: 60px 0;
+}
+
+.historia-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.historia-texto p {
+    color: bisque;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.historia-fechas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.fecha-item {
+    background-color: rgba(203, 119, 144, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border-left: 3px solid #CB7790;
+}
+
+.fecha-numero {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #CB7790;
+}
+
+.fecha-texto {
+    font-size: 14px;
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.historia-imagen img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================
+   MISIÓN, VISIÓN Y VALORES
+   ============================================ */
+.seccion-mvv {
+    background-color: bisque;
+    padding: 60px 0;
+}
+
+.seccion-mvv .seccion-titulo {
+    color: #4e1f2e;
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mvv-card {
+    background-color: #4e1f2e;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.mvv-card:hover {
+    transform: translateY(-5px);
+}
+
+.mvv-icono {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.mvv-card h3 {
+    color: #CB7790;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+
+.mvv-card p {
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.mvv-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.mvv-card ul li {
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(203, 119, 144, 0.3);
+}
+
+.mvv-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* ============================================
+   LÍNEA DE TIEMPO
+   ============================================ */
+.seccion-tiempo {
+    background-color: #4e1f2e;
+    padding: 60px 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #CB7790;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    padding-right: 50px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #CB7790;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid bisque;
+}
+
+.timeline-item:nth-child(odd)::before {
+    right: -8px;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -8px;
+}
+
+.timeline-fecha {
+    font-size: 22px;
+    font-weight: bold;
+    color: #CB7790;
+}
+
+.timeline-contenido {
+    background-color: bisque;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-contenido h4 {
+    color: #4e1f2e;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.timeline-contenido p {
+    color: #2c121b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* ============================================
+   EQUIPO
+   ============================================ */
+.seccion-equipo {
+    background-color: bisque;
+    padding: 60px 0;
+}
+
+.seccion-equipo .seccion-titulo {
+    color: #4e1f2e;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.equipo-card {
+    background-color: #4e1f2e;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.equipo-card:hover {
+    transform: translateY(-5px);
+}
+
+.equipo-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.equipo-card h4 {
+    color: #CB7790;
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+}
+
+.equipo-card .cargo {
+    color: bisque;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.equipo-card .descripcion {
+    color: #b8957a;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15px 15px;
+    font-size: 14px;
+}
+
+/* ============================================
+   ORGANIGRAMA
+   ============================================ */
+.seccion-organigrama {
+    background-color: #4e1f2e;
+    padding: 60px 0;
+}
+
+.organigrama-container {
+    background-color: bisque;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.organigrama-nivel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.organigrama-nivel:last-child {
+    margin-bottom: 0;
+}
+
+.nivel-1 .organigrama-item {
+    min-width: 200px;
+}
+
+.organigrama-item {
+    background-color: #4e1f2e;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #CB7790;
+}
+
+.organigrama-icono {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.organigrama-item h4 {
+    color: #CB7790;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.organigrama-item p {
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ============================================
+   INSTALACIONES
+   ============================================ */
+.seccion-instalaciones {
+    background-color: bisque;
+    padding: 60px 0;
+}
+
+.seccion-instalaciones .seccion-titulo {
+    color: #4e1f2e;
+}
+
+.instalaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.instalacion-item {
+    background-color: #4e1f2e;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.instalacion-item:hover {
+    transform: scale(1.03);
+}
+
+.instalacion-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.instalacion-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.instalacion-info h4 {
+    color: #CB7790;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.instalacion-info p {
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+#footer {
+    background-color: #2c121b;
+    padding: 30px 20px 15px;
+    color: bisque;
+}
+
+.footer-contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-columna h3 {
+    color: #CB7790;
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.footer-columna h4 {
+    color: #CB7790;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.footer-columna p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-copy {
+    text-align: center;
+    border-top: 1px solid #CB7790;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.footer-copy p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b8957a;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    body {
+        padding-top: 140px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 5px 12px;
+    }
+
+    .historia-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .mvv-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .equipo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .instalaciones-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding: 10px 0 10px 50px !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+    }
+
+    .timeline-item::before {
+        left: 25px !important;
+        right: auto !important;
+    }
+
+    .timeline::before {
+        left: 30px !important;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0 !important;
+        padding-left: 50px !important;
+    }
+}
+
+/* Móviles */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 32px;
+    }
+
+    .hero-contenido p {
+        font-size: 16px;
+    }
+
+    .seccion-titulo {
+        font-size: 28px;
+    }
+
+    .mvv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .instalaciones-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organigrama-nivel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .organigrama-item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .historia-fechas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        padding-left: 50px !important;
+    }
+
+    .timeline-contenido {
+        padding: 15px;
+    }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 100px;
+    }
+
+    header {
+        padding: 5px 10px;
+    }
+
+    .logon {
+        width: 60px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 24px;
+    }
+
+    .hero-contenido p {
+        font-size: 14px;
+    }
+
+    .seccion-titulo {
+        font-size: 22px;
+    }
+
+    .historia-fechas {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        padding-left: 40px !important;
+    }
+
+    .timeline-item::before {
+        left: 18px !important;
+    }
+
+    .timeline::before {
+        left: 20px !important;
+    }
+
+    .timeline-fecha {
+        font-size: 16px;
+    }
+
+    .timeline-contenido h4 {
+        font-size: 16px;
+    }
+
+    .timeline-contenido p {
+        font-size: 13px;
+    }
+}
